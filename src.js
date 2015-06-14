@@ -1,7 +1,4 @@
-var React;
-try{ React = require('react-native'); }
-catch(e){ React = require('react'); }
-
+var React = require('react');
 
 export const State = React.createClass({
   propTypes: {

@@ -3,12 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var React;
-try {
-  React = require('react-native');
-} catch (e) {
-  React = require('react');
-}
+var React = require('react');
 
 var State = React.createClass({
   displayName: 'State',

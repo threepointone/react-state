@@ -4,7 +4,7 @@
   "description": "localized react state component",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "./node_modules/.bin/karma start",
     "build": "babel src.js -o index.js"
   },
   "keywords": [
@@ -14,12 +14,16 @@
   "author": "Sunil Pai",
   "license": "ISC",
   "devDependencies": {
-    "babel": "^5.5.4",
-    "babel-core": "^5.5.4",
-    "babel-eslint": "^3.1.15",
-    "babel-loader": "^5.1.4",
+    "babel": "^5.5.8",
+    "browserify": "^10.2.4",
+    "chai": "^3.0.0",
     "eslint": "^0.22.1",
     "eslint-plugin-react": "^2.5.0",
+    "karma": "^0.12.36",
+    "karma-browserify": "^4.2.1",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.5",
     "node-libs-browser": "^0.5.2",
     "react": "^0.13.3"
   }
