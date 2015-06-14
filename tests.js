@@ -8,7 +8,7 @@ describe('State', function(){
     var State = require('./index.js').State;
     var TestUtils = React.addons.TestUtils;
 
-    // Render a checkbox with label in the document
+    // Render a 'stateful' div
     var stateful = TestUtils.renderIntoDocument(
       React.createElement(State, {initial: 0}, function(val, set){
         return React.createElement('div', {onClick: function(){ set(val + 1); }}, val);
@@ -27,3 +27,4 @@ describe('State', function(){
   });
 
 });
+
