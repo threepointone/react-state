@@ -8,10 +8,11 @@ localized state in React render functions.
 ```js
 class Counter{
   render(){
-    return <State initial={0}>{ (val, set) =>
-      <div onClick={() => set(val + 1)}>
-        clicked {val} times
-      </div>
+    return <State initial={0}>{
+      (val, set) =>
+        <div onClick={() => set(val + 1)}>
+          clicked {val} times
+        </div>
     }</State>;
   }
 }
