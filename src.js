@@ -4,6 +4,10 @@ catch(e){ React = require('react'); }
 
 
 export const State = React.createClass({
+  propTypes: {
+    onChange: React.PropTypes.func,
+    children: React.PropTypes.func
+  },
   getDefaultProps(){
     return {
       onChange: () => {}

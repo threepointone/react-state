@@ -13,6 +13,10 @@ try {
 var State = React.createClass({
   displayName: 'State',
 
+  propTypes: {
+    onChange: React.PropTypes.func,
+    children: React.PropTypes.func
+  },
   getDefaultProps: function getDefaultProps() {
     return {
       onChange: function onChange() {}
