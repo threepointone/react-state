@@ -8,6 +8,9 @@ export const State = React.createClass({
     onChange: React.PropTypes.func,
     children: React.PropTypes.func
   },
+  shouldComponentUpdate(){
+    return true;
+  },
   getDefaultProps(){
     return {
       onChange: () => {}

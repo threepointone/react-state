@@ -17,6 +17,9 @@ var State = React.createClass({
     onChange: React.PropTypes.func,
     children: React.PropTypes.func
   },
+  shouldComponentUpdate: function shouldComponentUpdate() {
+    return true;
+  },
   getDefaultProps: function getDefaultProps() {
     return {
       onChange: function onChange() {}
