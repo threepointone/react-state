@@ -20,3 +20,5 @@ React.render(<Counter/>, el);
 ```
 
 [based on this thread](https://discuss.reactjs.org/t/children-as-a-function-render-callbacks/626)
+
+made this repo to use / test shallow rendering and whatnot. wish me luck.
