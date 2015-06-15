@@ -20,6 +20,13 @@ class Counter{
 React.render(<Counter/>, el);
 ```
 
+props
+---
+
+- initial
+- onChange: function
+- `children`: function
+
 [based on this thread](https://discuss.reactjs.org/t/children-as-a-function-render-callbacks/626)
 
 made this repo to use / test shallow rendering and whatnot. wish me luck.
