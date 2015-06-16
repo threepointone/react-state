@@ -10,7 +10,7 @@ export const State = React.createClass({
   },
   getDefaultProps(){
     return {
-      onChange: () => {}
+      onChange(){}
     };
   },
   getInitialState() {
