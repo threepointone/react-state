@@ -39,6 +39,11 @@ var State = (function (_React$Component) {
   _inherits(State, _React$Component);
 
   _createClass(State, [{
+    key: 'shouldComponentUpdate',
+    value: function shouldComponentUpdate() {
+      return true;
+    }
+  }, {
     key: 'render',
     value: function render() {
       return this.props.children(this.state.value, this.setter);
