@@ -1,6 +1,6 @@
 {
   "name": "react-state",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "localized react state component",
   "main": "index.js",
   "scripts": {
