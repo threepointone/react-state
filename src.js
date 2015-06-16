@@ -26,3 +26,9 @@ export const State = React.createClass({
     return this.props.children(this.state.value, this.setter);
   }
 });
+
+// mask the reacty parts
+export function state(props, callback){
+  return <State {...props}>{callback}</State>;
+}
+

@@ -3,6 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
+exports.state = state;
 var React = require('react');
 
 var State = React.createClass({
@@ -33,4 +34,14 @@ var State = React.createClass({
     return this.props.children(this.state.value, this.setter);
   }
 });
+
 exports.State = State;
+// mask the reacty parts
+
+function state(props, callback) {
+  return React.createElement(
+    State,
+    props,
+    callback
+  );
+}
