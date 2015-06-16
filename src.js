@@ -1,34 +1,27 @@
-var React = require('react');
+import React from 'react';
 
-export const State = React.createClass({
-  propTypes: {
+export class State extends React.Component {
+  static propTypes = {
     onChange: React.PropTypes.func,
     children: React.PropTypes.func
-  },
-  shouldComponentUpdate(){
-    return true;
-  },
-  getDefaultProps(){
-    return {
-      onChange(){}
-    };
-  },
-  getInitialState() {
-    return {
-      value: this.props.initial
-    };
-  },
-  setter(value){
+  }
+  static defaultProps = {
+    onChange(){}
+  }
+  state = {
+    value: this.props.initial
+  }
+  setter = value => {
     this.setState({value});
     this.props.onChange(value);
-  },
-  render() {
+  }
+  render(){
     return this.props.children(this.state.value, this.setter);
   }
-});
+}
 
 // mask the reacty parts
-export function state(props, callback){
-  return <State {...props}>{callback}</State>;
-}
+export const state = (props, callback) =>
+  <State {...props}>{callback}</State>;
+
 
